@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ bài may mắn</title>
+    <link rel="icon" href="./assets/img/link.jpg">
+    <!-- My style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body onresize="resize()">
+    <div>
+        <h1 style="text-align: center; font-size: 32px !important; font-family: Montserrat; color: pink;">Thẻ Bài May Mắn</h1>
+        <h1 class="header__title animate__animated animate__fadeInDown" style="font-family: Montserrat;color:pink;">
+            Luật chơi: Mỗi người có duy nhất 1 lượt chơi. Bạn chọn 01 thẻ bài. 
+            Chụp lại màn hình khi chọn xong và gửi cho Bạc Nhỏ để được nhận quà nhé <3
+        </h1>
+    </div>
+
+    <div class="d-flex-center">
+        <div class="group__box"></div>
+    </div>
+    
+    <audio id="christmas-music" loop>
+        <source src="./assets/We Wish You A Merry Christmas - The Queen Dance Studio (mp3cut (mp3cut.net).mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var audio = document.getElementById('christmas-music');
+        document.addEventListener('touchstart', function (event) {
+            audio.play();
+        });
+        document.addEventListener('click', function (event1) {
+            audio.play();
+        });
+
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- My script -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
